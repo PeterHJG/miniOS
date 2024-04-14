@@ -11,6 +11,7 @@ int main() {
     print_minios("[MiniOS SSU] Hello, World!");
 
     char *input;
+    char *input_num;
 
     while(1) {
         // readline을 사용하여 입력 받기
@@ -23,11 +24,11 @@ int main() {
         if (strcmp(input,"minisystem") == 0){
             minisystem();
         }
-        if (strcmp(input,"hong") == 0){
-            hong();
-        }
         if (strcmp(input,"fork_main") == 0){
             fork_main();
+        }
+        if (strcmp(input,"ipc_week6") == 0){
+            ipc_week6();
         }
         else system(input);
     }
